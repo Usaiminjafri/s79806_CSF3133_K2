@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Contact Form</title>
+</head>
+
+<body>
+
+    <!-- Header div -->
+    <div>
+        <h1>
+            Wonderbuuk
+            <span>An interactive contact form with an inline calculator</span>
+        </h1>
+    </div>
+
+    <hr>
+
+    <!-- Header section -->
+    <div>
+        <h2>Header div</h2>
+        <p>
+            Site title in &lt;h1&gt; (block)
+            with a slogan in &lt;span&gt; (inline).
+        </p>
+    </div>
+
+    <hr>
+
+    <!-- Contact form div -->
+    <div>
+        <h2>Contact form div</h2>
+
+        <form onsubmit="submitForm(event)">
+
+            <label>Email:</label><br>
+            <input type="email" id="email" required>
+            <br><br>
+
+            <label>Preferred contact date:</label><br>
+            <input type="date" id="date" required>
+            <br><br>
+
+            <label>Satisfaction level:</label><br>
+            <input type="range" id="satisfaction"
+                   min="0" max="100" value="50"
+                   oninput="rangeValue.textContent=this.value">
+
+            <span id="rangeValue">50</span>%
+            <br><br>
+
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
+    <hr>
+
+    <!-- Calculator div -->
+    <div>
+        <h2>Calculator div</h2>
+
+        <label>First number:</label><br>
+        <input type="number" id="num1" value="0"
+               oninput="calculateSum()">
+        <br><br>
+
+        <label>Second number:</label><br>
+        <input type="number" id="num2" value="0"
+               oninput="calculateSum()">
+        <br><br>
+
+        <p>Sum:</p>
+
+        <output id="result">0</output>
+
+    </div>
+
+    <hr>
+
+    <!-- Footer div -->
+    <div>
+        <h2>Footer div</h2>
+
+        <p>Contact: contact@example.com</p>
+
+        <p>&copy; 2026 Wonderbuuk. All rights reserved.</p>
+    </div>
+
+    <hr>
+
+    <p>
+        One page that combines every concept from the lab:
+        block and inline elements, div layout, entities,
+        HTML5 inputs and output.
+    </p>
+
+    </script>
+
+</body>
+</html>
