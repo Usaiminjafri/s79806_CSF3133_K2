@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Exercise 4 - Responsive Web Page</title>
+    
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Internal CSS -->
+    <style>
+        header {
+            background-color: #14213d;
+            color: #ffffff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+        
+        header p {
+            color: #fca311;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Modern Web Design & Development</h1>
+        <p>Lab Exercise 4: Responsive HTML5 & CSS</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#register">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Section 1: Article -->
+        <section id="about">
+            <h2>Core Concepts</h2>
+            <article>
+                <h3>Semantic HTML5 Structure</h3>
+                <p>Using semantic elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, and <code>&lt;footer&gt;</code> improves accessibility, search engine optimization, and code readability.</p>
+            </article>
+            <article>
+                <h3>Responsive Layouts</h3>
+                <p>Combining fluid widths, flexible media, and CSS media queries ensures that web pages look clean and remain functional across desktops, tablets, and mobile phones.</p>
+            </article>
+        </section>
+
+        <!-- Section 2: Captioned Video -->
+        <section id="media">
+            <h2>Featured Media</h2>
+            <figure>
+                <!-- Using a standard public sample MP4 video so it plays immediately in modern browsers -->
+                <video controls poster="https://via.placeholder.com/800x450.png?text=HTML5+Video+Preview">
+                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                    Your browser does not support the HTML5 video tag.
+                </video>
+                <figcaption>Figure 1: Demonstration of a responsive, captioned HTML5 video element.</figcaption>
+            </figure>
+        </section>
+
+        <!-- Section 3: Styled Form -->
+        <section id="register">
+            <h2>Participant Registration</h2>
+            <form action="#" method="post">
+                <!-- Name: Text input -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <!-- Email: Text input -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
+
+                <!-- Gender: Radio buttons -->
+                <div class="form-group">
+                    <span class="group-label">Gender:</span>
+                    <div class="inline-options">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </div>
+                </div>
+
+                <!-- Favourite hobbies: Checkboxes -->
+                <div class="form-group">
+                    <span class="group-label">Favourite hobbies:</span>
+                    <div class="inline-options">
+                        <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+                        <label><input type="checkbox" name="hobbies" value="gaming"> Gaming</label>
+                        <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+                        <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+                    </div>
+                </div>
+
+                <!-- Submit: Submit button -->
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Web Development Lab 4. Built with HTML5 & CSS.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,194 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f6f2;
+    color: #14213d;
+}
+
+/* Navigation Bar (Unordered List) */
+nav {
+    background-color: #1d3557;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/* Link States & Text-Decoration */
+nav ul li a:link,
+nav ul li a:visited {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #fca311;
+    color: #14213d;
+    text-decoration: underline;
+}
+
+nav ul li a:active {
+    background-color: #e5e5e5;
+    color: #000000;
+}
+
+/* Main Content Layout */
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+section h2 {
+    border-bottom: 2px solid #fca311;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.25rem;
+}
+
+article {
+    margin-bottom: 1.25rem;
+}
+
+article:last-child {
+    margin-bottom: 0;
+}
+
+article h3 {
+    color: #1d3557;
+    margin-bottom: 0.4rem;
+}
+
+/* Responsive Media */
+figure {
+    width: 100%;
+    margin: 0 auto;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    display: block;
+    background-color: #000;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label,
+.group-label {
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+}
+
+input[type="text"] {
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #1d3557;
+    box-shadow: 0 0 0 2px rgba(29, 53, 87, 0.15);
+}
+
+.inline-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 0.25rem;
+}
+
+.inline-options label {
+    font-weight: normal;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    background-color: #14213d;
+    color: #ffffff;
+    border: none;
+    padding: 0.85rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+input[type="submit"]:hover {
+    background-color: #fca311;
+    color: #14213d;
+}
+
+/* Footer */
+footer {
+    background-color: #14213d;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive Breakpoint for Mobile Devices */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    section {
+        padding: 1.25rem;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+    }
+}
