@@ -1,0 +1,157 @@
+/* General Page Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f9f9;
+    color: #222222;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00796b;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Interactive Link States (LVHA Order) */
+a:link {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #e0f2f1;
+}
+
+a:hover {
+    color: #ffd54f;
+}
+
+a:active {
+    color: #ff8a65;
+}
+
+nav ul li a:hover {
+    background-color: #004d40;
+}
+
+/* Footer Link Contrast Override */
+footer a:link {
+    color: #80cbc4;
+}
+
+footer a:visited {
+    color: #b2dfdb;
+}
+
+footer a:hover {
+    color: #ffd54f;
+    text-decoration: underline;
+}
+
+footer a:active {
+    color: #ff8a65;
+}
+
+/* Section Layout & Responsive Widths */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+}
+
+h2 {
+    text-decoration: underline;
+    color: #004d40;
+}
+
+/* Destination Cards & Pricing */
+.card {
+    border: 1px solid #b2dfdb;
+    background-color: #e0f2f1;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #c62828;
+    font-weight: bold;
+}
+
+.new-price {
+    color: #1b5e20;
+    font-size: 1.15em;
+    font-weight: bold;
+    margin-left: 8px;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Responsive Video Scaling */
+video {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #004d40;
+}
+
+figcaption {
+    font-style: italic;
+    font-size: 0.9em;
+    color: #555555;
+    margin-top: 8px;
+}
+
+/* Trip Interest Form Styling */
+.trip-form {
+    background-color: #e8f5e9;
+    padding: 20px;
+    border: 2px solid #00796b;
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.btn-submit {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.btn-submit:hover {
+    background-color: #004d40;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #004d40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
