@@ -1,0 +1,95 @@
+/* Body base styling */
+body {
+    font-family: 'Roboto', sans-serif; 
+    margin: 0; 
+    padding: 0;
+}
+
+/* Header with background */
+header {
+    background-image: url("books.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; /* Added per extended instruction */
+    background-position: center; /* Adjusted for better visibility */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Merriweather', serif; /* Extended font requirement */
+    margin: 0;
+}
+
+p {
+    line-height: 1.6; /* Extended line-height requirement */
+    padding: 20px;
+}
+
+/* Navigation */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+li a.active { /* Extended: Active state */
+    background-color: #04AA6D;
+}
+
+/* Table styling */
+#product {
+    border-collapse: collapse; /* Fixed: was 'collapsed' */
+    width: 90%;
+    margin: 20px auto;
+}
+
+#product td, #product th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#product th {
+    background-color: #04AA6D;
+    color: white;
+    text-transform: uppercase; /* Extended instruction */
+    text-align: center; /* Extended instruction */
+    padding-top: 12px; /* Extended instruction */
+    padding-bottom: 12px; /* Extended instruction */
+}
+
+#product tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#product tr:hover { /* Fixed: was 'tr:hovered' */
+    background-color: #ddd;
+}
+
+.price {
+    text-align: right; /* Extended instruction */
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f1f1; /* Extended subtle bg */
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

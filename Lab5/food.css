@@ -1,0 +1,107 @@
+/* Global settings */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #FBF7F0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Header */
+header {
+    background-image: url('header-bg.jpg'); /* Assumes image is present */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+header p {
+    text-align: center;
+}
+/* Navigation Bar */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2C2C2C;
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: #111;
+}
+
+nav li a.active {
+    background-color: #E67E22;
+}
+
+/* Content */
+main {
+    width: 90%;
+    max-width: 980px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Table */
+#food-menu {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#food-menu th, #food-menu td {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+#food-menu th {
+    background-color: #E67E22;
+    color: white;
+    text-transform: uppercase;
+}
+
+#food-menu tr:nth-child(even) {
+    background-color: #FBF7F0;
+}
+
+#food-menu tr:hover {
+    background-color: #FDEBD0;
+}
+
+.price {
+    text-align: right;
+}
+
+/* Footer */
+footer {
+    background-color: #ddd;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #333;
+}
